@@ -1,0 +1,61 @@
+[site]
+title = "Wen Su"
+description = "Wen Su is a Ph.D. student in Mathematics at the University of Oxford, working in financial econometrics and quantitative finance."
+favicon = "/favicon.svg"
+last_updated = "August 2, 2026"
+
+[author]
+name = "Wen Su"
+title = "Ph.D. Student"
+institution = "University of Oxford"
+avatar = ""
+
+[social]
+email = "wen.su@maths.ox.ac.uk"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["en", "zh"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+en = "English"
+zh = "中文"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "Teaching"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "Talks"
+type = "page"
+target = "talks"
+href = "/talks"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"

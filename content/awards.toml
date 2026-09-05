@@ -1,0 +1,19 @@
+type = "card"
+title = "Awards"
+description = "Scholarships and academic distinctions."
+layout = "compact"
+
+[[items]]
+title = "EPSRC Scholarship"
+subtitle = "Fully funded Ph.D. scholarship"
+tags = ["Scholarship", "Oxford"]
+
+[[items]]
+title = "China National Scholarship"
+subtitle = "National scholarship"
+tags = ["Scholarship"]
+
+[[items]]
+title = "China Mathematics Contest"
+subtitle = "First Prize (Preliminary) · Second Prize (Final)"
+tags = ["Mathematics", "Competition"]

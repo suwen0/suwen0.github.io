@@ -1,0 +1,20 @@
+type = "card"
+title = "Teaching"
+layout = "standard"
+
+[[items]]
+title = "University of Oxford"
+date = "2023–Present"
+content = """
+- Statistics and Financial Data Analysis (Tutor, MSc)
+- Introduction to Statistics (Tutor, MSc)
+- Fixed Point Methods for Nonlinear PDEs (TA, Undergraduate)
+"""
+
+[[items]]
+title = "Peking University"
+date = "2020–2022"
+content = """
+- Financial Econometrics (TA for international students, Graduate)
+- Statistical Inference (TA, Graduate)
+"""

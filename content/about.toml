@@ -1,0 +1,74 @@
+type = "about"
+title = "About"
+
+[profile]
+
+[[profile.research_interests]]
+area = "Financial Econometrics"
+topics = []
+
+[[profile.research_interests]]
+area = "Quantitative Finance"
+topics = []
+
+[[profile.research_interests]]
+area = "High-dimensional Statistics"
+topics = []
+
+[[profile.research_interests]]
+area = "Credit Risk"
+topics = []
+
+[[profile.research_interests]]
+area = "FinTech (LLMs/Text)"
+topics = []
+
+[[profile.research_interests]]
+area = "Stochastic Process"
+topics = []
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "education"
+type = "details"
+title = "Education"
+layout = "columns"
+
+[[sections.items]]
+primary = "University of Oxford"
+secondary = "Ph.D. in Mathematics (Quant Finance)"
+meta = "2023–2027"
+
+[[sections.items]]
+primary = "Peking University"
+secondary = "M.S. in Financial Mathematics"
+meta = "2020–2022"
+
+[[sections.items]]
+primary = "Lishui University"
+secondary = "B.S. in Mathematics and Applied Mathematics"
+meta = "2016–2020"
+
+[[sections]]
+id = "industry"
+type = "details"
+title = "Industry Experience"
+layout = "stacked"
+
+[[sections.items]]
+primary = "J.P. Morgan Chase & Co."
+secondary = "Part-time Ph.D. Associate · Quantitative Research"
+meta = "October 2023–Present"
+location = "London, United Kingdom"
+detail = "Credit risk · CDS pricing · Credit portfolios · Path-dependent models"
+
+[[sections]]
+id = "family"
+type = "markdown"
+source = "family.md"
+title = ""

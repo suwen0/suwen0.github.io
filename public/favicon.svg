@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">Wen Su</title>
+  <rect width="100" height="100" rx="20" fill="#1e293b"/>
+  <text
+    x="50"
+    y="54"
+    fill="#ffffff"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="40"
+    font-weight="700"
+    letter-spacing="-2"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >WS</text>
+  <rect x="30" y="76" width="40" height="4" rx="2" fill="#d4a562"/>
+</svg>

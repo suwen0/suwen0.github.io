@@ -1,0 +1,15 @@
+type = "card"
+title = "Talks"
+layout = "yearly"
+
+[[items]]
+title = "CAAS Data Science and AI Conference (Great Bay Area U); Post-SoFiE Workshop: Machine Learning of Economic & Financial Data (U of Macau); LSE Statistics PhD Workshop (LSE); Mathematical and Computational Finance Seminar (U of Oxford); DataSig Scientific Committee (British Library); PhD Workshop on Quantitative Finance and Financial Technology (Warwick Business School); Cambridge Econometrics PhD Workshop (U of Cambridge); Occasional Econometrics Workshop (Bayes Business School); Frontiers of Factor Investing Conference (Lancaster U); Data Science Meets Finance Conference (U of Reading)."
+date = "2026"
+
+[[items]]
+title = "9th CFE-CMStatistics Conference (London); 6th CJOE Bigdatametrics Conference (ZUEL)."
+date = "2025"
+
+[[items]]
+title = "CDT Mathematics of Random Systems Seminar (Missenden Abbey)."
+date = "2024"

@@ -1,0 +1,74 @@
+type = "about"
+title = "主页"
+
+[profile]
+
+[[profile.research_interests]]
+area = "金融计量"
+topics = []
+
+[[profile.research_interests]]
+area = "量化金融"
+topics = []
+
+[[profile.research_interests]]
+area = "高维统计"
+topics = []
+
+[[profile.research_interests]]
+area = "信用风险"
+topics = []
+
+[[profile.research_interests]]
+area = "金融科技"
+topics = []
+
+[[profile.research_interests]]
+area = "随机过程"
+topics = []
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "简介"
+
+[[sections]]
+id = "education"
+type = "details"
+title = "教育经历"
+layout = "columns"
+
+[[sections.items]]
+primary = "牛津大学"
+secondary = "数学博士（量化金融）"
+meta = "2023–2027 年"
+
+[[sections.items]]
+primary = "北京大学"
+secondary = "金融数学硕士"
+meta = "2020–2022 年"
+
+[[sections.items]]
+primary = "丽水学院"
+secondary = "数学与应用数学学士"
+meta = "2016–2020 年"
+
+[[sections]]
+id = "industry"
+type = "details"
+title = "业界经历"
+layout = "stacked"
+
+[[sections.items]]
+primary = "摩根大通"
+secondary = "兼职博士经理 · 量化研究"
+meta = "2023 年 10 月至今"
+location = "英国伦敦"
+detail = "信用风险 · CDS 定价 · 信用组合 · 路径依赖模型"
+
+[[sections]]
+id = "family"
+type = "markdown"
+source = "family.md"
+title = ""

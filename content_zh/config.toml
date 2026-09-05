@@ -1,0 +1,39 @@
+[site]
+title = "苏文"
+description = "苏文是牛津大学数学博士研究生，研究方向包括金融计量和量化金融。"
+last_updated = "2026年8月2日"
+
+[author]
+name = "苏文"
+title = "数学博士研究生"
+institution = "牛津大学"
+
+[[navigation]]
+title = "主页"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "研究"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "教学"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "报告"
+type = "page"
+target = "talks"
+href = "/talks"
+
+[[navigation]]
+title = "奖项"
+type = "page"
+target = "awards"
+href = "/awards"
