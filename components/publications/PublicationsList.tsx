@@ -100,6 +100,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 <p>
                                                     {venue && <strong className="font-bold text-primary">{venue}</strong>}
                                                     {venue ? `, ${displayYear}` : displayYear}
+                                                    {pub.description && (
+                                                        <span className={isHighlightedStatus ? 'font-semibold text-primary' : 'text-neutral-500'}>
+                                                            {' — '}{pub.description}
+                                                        </span>
+                                                    )}
                                                     {pub.url && (
                                                         <>
                                                             {' '}
@@ -108,12 +113,8 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                             </a>
                                                         </>
                                                     )}
-                                                    {pub.description && (
-                                                        <span className={isHighlightedStatus ? 'font-semibold text-primary' : 'text-neutral-500'}>
-                                                            {' — '}{pub.description}
-                                                        </span>
-                                                    )}
                                                 </p>
+                                                
                                             </div>
                                         </motion.li>
                                     );
