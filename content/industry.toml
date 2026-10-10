@@ -10,32 +10,29 @@ Alongside my doctoral research at Oxford, I work on credit risk and CDS pricing,
 """
 
 [[items]]
-title = "Semiparametric Equity–Credit Modelling"
-subtitle = "Joint work with M. Arnsdorf, B. Horvath and S. Schismenos"
+title = "Estimating CDS Spreads for Illiquid Counterparties"
 content = """
-This project develops a semiparametric model for estimating credit default swap (CDS) spreads using equity-market information. It combines equity–credit modelling with a flexible statistical specification and evaluates the resulting estimates against established credit-risk benchmarks. The research connects semiparametric financial econometrics with practical questions in credit spread estimation.
+Reliable credit spreads are essential for valuing counterparty risk and calculating credit valuation adjustments (CVA), but many counterparties do not have liquid CDS quotes. Broad market proxies can miss firm-specific risk, making the estimation of illiquid credit spreads an important practical problem. My research draws on equity-market information, particularly option-implied volatility, to estimate CDS spreads when direct quotes are unavailable. The aim is to capture differences in credit quality and respond to changing market conditions within a framework that can be calibrated to observable data.
 """
 image = "/images/industry/spec-core.png"
-imageAlt = "Core research figure for the semiparametric equity–credit model"
+imageAlt = "Research figure on estimating CDS spreads for illiquid counterparties"
 imagePlaceholder = "Core figure · awaiting selection"
-# Add a one-sentence caption after choosing the actual figure.
 imageCaption = ""
-paperTitle = "A Semi-Parametric Equity-Credit Model for CDS Spread Estimation"
-status = "Journal of Credit Risk · Revise and resubmit"
-link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5471406"
-linkLabel = "Read paper"
+referencesLabel = "References"
+references = [
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*."
+]
 
 [[items]]
-title = "Signature-Based Credit Models"
-subtitle = "Joint work with M. Arnsdorf, B. Horvath and S. Schismenos"
+title = "Path-Dependent Modeling in Credit Markets"
 content = """
-This project studies signature-based structural models for credit markets. Path signatures provide a systematic way to represent the history of an underlying process and introduce path dependence into credit modelling. The research brings together structural credit models and statistical representations of paths to explore applications in credit markets.
+Financial risks can depend on an entire trajectory: default may occur as soon as a firm's value crosses a barrier, and path-dependent contracts depend on the evolution of prices over time. Capturing this information is important for pricing and risk management. My research uses path signatures to build flexible stochastic models that retain information about past dynamics. Applications include structural credit modelling, where a common firm-value process links default probabilities, CDS term structures and equity option prices.
 """
 image = "/images/industry/signature-core.png"
-imageAlt = "Core research figure for signature-based structural credit models"
+imageAlt = "Research figure on path-dependent modelling with signatures"
 imagePlaceholder = "Core figure · awaiting selection"
 imageCaption = ""
-paperTitle = "Signature-Based Structural Models and Applications in Credit Markets"
-status = "Working paper"
-link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7498599"
-linkLabel = "Read paper"
+referencesLabel = "References"
+references = [
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *Signature-Based Structural Models and Applications in Credit Markets*."
+]

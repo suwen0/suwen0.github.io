@@ -28,6 +28,8 @@ export interface CardItem {
     linkLabel?: string;
     paperTitle?: string;
     status?: string;
+    references?: string[];
+    referencesLabel?: string;
 }
 
 export interface CardPageConfig extends BasePageConfig {

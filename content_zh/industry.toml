@@ -10,31 +10,29 @@ PhD Associate（兼职），Quantitative Research · 2023 年 10 月至今
 """
 
 [[items]]
-title = "半参数股票–信用模型"
-subtitle = "与 M. Arnsdorf、B. Horvath 和 S. Schismenos 合作"
+title = "非流动性交易对手的 CDS 利差估计"
 content = """
-本项目研究利用股票市场信息估计信用违约互换（CDS）利差的半参数模型。我们将股票与信用市场之间的建模关系与灵活的统计方法相结合，并与已有信用风险模型进行实证比较。这项研究将半参数金融计量方法用于信用利差估计中的实际问题。
+交易对手信用风险估值与信用估值调整（CVA）需要可靠的信用利差，但许多交易对手缺乏活跃的 CDS 报价。基于市场分组构造的代理利差可能难以反映企业特有的风险，因此，非流动性信用利差估计是金融机构面临的重要实际问题。我的研究利用股票市场信息，特别是期权隐含波动率，在缺乏直接 CDS 报价时估计信用利差。目标是在能够用市场可观测数据校准的框架中，反映不同企业的信用质量及其随市场变化的特征。
 """
 image = "/images/industry/spec-core.png"
-imageAlt = "半参数股票–信用模型的核心研究图"
+imageAlt = "估计非流动性交易对手 CDS 利差的研究图"
 imagePlaceholder = "核心图片 · 待选定"
 imageCaption = ""
-paperTitle = "A Semi-Parametric Equity-Credit Model for CDS Spread Estimation"
-status = "Journal of Credit Risk · 修改后重审"
-link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5471406"
-linkLabel = "阅读论文"
+referencesLabel = "参考文献"
+references = [
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*."
+]
 
 [[items]]
-title = "基于路径签名的信用模型"
-subtitle = "与 M. Arnsdorf、B. Horvath 和 S. Schismenos 合作"
+title = "信用市场中的路径依赖建模"
 content = """
-本项目研究基于路径签名的结构化信用模型。路径签名为表示底层过程的历史信息提供了系统方法，使模型能够纳入路径依赖。本研究将结构化信用模型与路径的统计表示相结合，探索其在信用市场中的应用。
+金融风险可能取决于过程的整条演化路径：企业价值触及违约边界即可触发违约，路径依赖合约的收益也与价格随时间的变化有关。因此，如何将路径信息纳入模型，是金融定价与风险管理中的重要问题。我的研究利用路径签名构建能够保留历史信息的灵活随机模型。其中一项应用是结构化信用建模：通过共同的企业价值过程，将违约概率、CDS 期限结构和股票期权价格联系起来。
 """
 image = "/images/industry/signature-core.png"
-imageAlt = "基于路径签名的结构化信用模型的核心研究图"
+imageAlt = "基于路径签名开展路径依赖建模的研究图"
 imagePlaceholder = "核心图片 · 待选定"
 imageCaption = ""
-paperTitle = "Signature-Based Structural Models and Applications in Credit Markets"
-status = "工作论文"
-link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7498599"
-linkLabel = "阅读论文"
+referencesLabel = "参考文献"
+references = [
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *Signature-Based Structural Models and Applications in Credit Markets*."
+]

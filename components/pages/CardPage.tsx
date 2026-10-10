@@ -28,7 +28,7 @@ function ProjectFigure({ item }: { item: CardItem }) {
                     href={item.image}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg border border-neutral-200 bg-white p-3"
+                    className="flex aspect-[16/10] items-center justify-center overflow-hidden rounded-lg border border-neutral-200 bg-white p-3"
                 >
                     <img
                         src={item.image}
@@ -40,7 +40,7 @@ function ProjectFigure({ item }: { item: CardItem }) {
                     />
                 </a>
             ) : (
-                <div className="flex aspect-[4/3] items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-6 text-center text-sm text-neutral-600">
+                <div className="flex aspect-[16/10] items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-6 text-center text-sm text-neutral-600">
                     {item.imagePlaceholder || 'Project figure forthcoming'}
                 </div>
             )}
@@ -68,28 +68,30 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                     )}
                 </header>
 
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
-                    {config.items.map((item) => (
-                        <article key={item.title} className="flex min-w-0 flex-col rounded-xl border border-neutral-200 bg-background p-5 sm:p-7">
-                            <div className="md:min-h-[7rem]">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-0">
+                    {config.items.map((item, index) => (
+                        <article key={item.title} className={`min-w-0 ${index === 0 ? 'md:pr-8 lg:pr-10' : 'border-t border-neutral-200 pt-8 md:border-l md:border-t-0 md:pl-8 md:pt-0 lg:pl-10'}`}>
+                            <div className="md:min-h-[3.75rem]">
                                 <h2 className="font-serif text-2xl font-bold leading-snug text-primary">{item.title}</h2>
-                                {item.subtitle && <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.subtitle}</p>}
                             </div>
                             {item.content && (
-                                <div className="mt-5 text-[0.95rem] leading-7 text-neutral-700 md:min-h-[12rem]">
+                                <div className="mt-4 text-[0.95rem] leading-7 text-neutral-700">
                                     <ReactMarkdown components={markdownComponents}>{item.content}</ReactMarkdown>
                                 </div>
                             )}
                             <ProjectFigure item={item} />
-                            <footer className="mt-auto pt-6">
-                                {item.paperTitle && <p className="text-sm italic leading-relaxed text-primary">{item.paperTitle}</p>}
-                                {item.status && <p className="mt-2 text-sm leading-relaxed text-neutral-600">{item.status}</p>}
-                                {item.link && (
-                                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center font-medium text-accent underline-offset-4 hover:underline">
-                                        {item.linkLabel || 'Read paper'}
-                                    </a>
-                                )}
-                            </footer>
+                            {item.references && item.references.length > 0 && (
+                                <footer className="mt-7 border-t border-neutral-200 pt-5">
+                                    <h3 className="mb-3 text-sm font-semibold text-primary">{item.referencesLabel || 'References'}</h3>
+                                    <ul className="space-y-3 text-sm leading-relaxed text-neutral-700">
+                                        {item.references.map((reference) => (
+                                            <li key={reference} className="pl-4 [text-indent:-1rem]">
+                                                <ReactMarkdown components={markdownComponents}>{reference}</ReactMarkdown>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </footer>
+                            )}
                         </article>
                     ))}
                 </div>
