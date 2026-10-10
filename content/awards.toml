@@ -4,7 +4,7 @@ description = "Scholarships and academic distinctions."
 layout = "compact"
 
 [[items]]
-title = "Fully funded Ph.D. sponsored by J.P. Morgan"
+title = "Ph.D. sponsored by J.P. Morgan"
 subtitle = "about £288k/4y"
 tags = ["Scholarship", "Oxford"]
 
