@@ -6,13 +6,18 @@ description = """
 
 PhD Associate (part-time), Quantitative Research · October 2023–Present
 
-Alongside my doctoral research at Oxford, I work on credit risk and CDS pricing, connecting statistical methods with financial modelling.
+Alongside my doctoral research at Oxford, I work closely with the Quantitative Research team at J.P. Morgan. My work focuses on credit risk and CDS pricing, combining statistical methods with financial modeling.
+
 """
 
 [[items]]
 title = "Estimating CDS Spreads for Illiquid Counterparties"
 content = """
-Reliable credit spreads are essential for valuing counterparty risk and calculating credit valuation adjustments (CVA), but many counterparties do not have liquid CDS quotes. Broad market proxies can miss firm-specific risk, making the estimation of illiquid credit spreads an important practical problem. My research draws on equity-market information, particularly option-implied volatility, to estimate CDS spreads when direct quotes are unavailable. The aim is to capture differences in credit quality and respond to changing market conditions within a framework that can be calibrated to observable data.
+- CDS spreads are essential for valuing counterparty credit risk and calculating credit valuation adjustments (CVA), yet many counterparties lack liquid CDS quotes.
+
+- Estimating proxy credit spreads for illiquid counterparties is required under Basel’s standardised approach to CVA risk and remains a practical challenge for major dealer banks.
+
+- Our research draws on equity-market information to uncover and model the links between equity and credit markets. The resulting methods support daily credit risk valuation and provide a framework for hedging credit risk with equity options.
 """
 image = "/images/industry/spec-core.png"
 imageAlt = "Research figure on estimating CDS spreads for illiquid counterparties"
@@ -20,7 +25,8 @@ imagePlaceholder = "Core figure · awaiting selection"
 imageCaption = ""
 referencesLabel = "References"
 references = [
-  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*."
+  "Su, W. (2023). *Distance to Default Based on the CEV–KMV Model*. Journal of Risk", 
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*. Available at SSRN: https://ssrn.com/abstract=5471406"
 ]
 
 [[items]]
