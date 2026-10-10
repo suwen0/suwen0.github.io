@@ -75,7 +75,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
                                 <h2 className="font-serif text-2xl font-bold leading-snug text-primary">{item.title}</h2>
                             </div>
                             {item.content && (
-                                <div className="mt-4 text-[0.95rem] leading-7 text-neutral-700">
+                                <div className="mt-4 text-sm leading-6 text-neutral-700">
                                     <ReactMarkdown components={markdownComponents}>{item.content}</ReactMarkdown>
                                 </div>
                             )}
