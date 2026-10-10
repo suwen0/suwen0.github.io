@@ -28,7 +28,7 @@ function ProjectFigure({ item }: { item: CardItem }) {
                     href={item.image}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex aspect-[16/10] items-center justify-center overflow-hidden rounded-lg border border-neutral-200 bg-white p-3"
+                    className="block"
                 >
                     <img
                         src={item.image}
@@ -36,7 +36,7 @@ function ProjectFigure({ item }: { item: CardItem }) {
                         loading="lazy"
                         decoding="async"
                         onError={() => setFailedSource(item.image || '')}
-                        className="h-full w-full object-contain"
+                        className="block h-auto w-full"
                     />
                 </a>
             ) : (
