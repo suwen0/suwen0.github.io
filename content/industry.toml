@@ -2,7 +2,7 @@ type = "card"
 title = "Industry Experience & Research"
 layout = "projects"
 description = """
-**J.P. Morgan · London, United Kingdom**
+**J.P. Morgan · London**
 
 PhD Associate (part-time), Quantitative Research · October 2023–Present
 
@@ -25,14 +25,18 @@ imagePlaceholder = "Core figure · awaiting selection"
 imageCaption = ""
 referencesLabel = "References"
 references = [
-  "Su, W. (2023). *Distance to Default Based on the CEV–KMV Model*. Journal of Risk", 
-  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*. Available at SSRN: https://ssrn.com/abstract=5471406"
+  "Su, W. (2023). *Distance to Default Based on the CEV–KMV Model*. Journal of Risk.", 
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*. Available at SSRN."
 ]
 
 [[items]]
-title = "Path-Dependent Modeling in Credit Markets"
+title = "Path-Dependent Modeling in Financial Markets"
 content = """
-Financial risks can depend on an entire trajectory: default may occur as soon as a firm's value crosses a barrier, and path-dependent contracts depend on the evolution of prices over time. Capturing this information is important for pricing and risk management. My research uses path signatures to build flexible stochastic models that retain information about past dynamics. Applications include structural credit modelling, where a common firm-value process links default probabilities, CDS term structures and equity option prices.
+- Path dependence plays an important role in financial markets. For example, default may occur when a firm’s value first crosses a barrier, making its trajectory central to pricing and risk management.
+
+- Signatures provide a systematic framework for modeling path dependence. Our research establishes foundational statistical and no-arbitrage results for signature-based models.
+
+- Building on these foundations, we develop flexible models of asset dynamics that incorporate path signatures and accommodate established rough volatility models.
 """
 image = "/images/industry/signature-core.png"
 imageAlt = "Research figure on path-dependent modelling with signatures"
@@ -40,5 +44,7 @@ imagePlaceholder = "Core figure · awaiting selection"
 imageCaption = ""
 referencesLabel = "References"
 references = [
-  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *Signature-Based Structural Models and Applications in Credit Markets*."
+  "Horvath, B., Su, W., Su, W., Wang, B. and Zhang, R. (2026). *How Fast Do Signatures Learn? Statistical Theory and Applications for Path Regression*. https://arxiv.org/abs/2607.17865.",
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *Signature-Based Structural Models and Applications in Credit Markets*. Available at SSRN.",
+  "Yang, T., Su, W. and Horvath, B. (2026). *A Rough Instantaneous Squared VIX Model for Term Structure and Option Pricing*. Preprint."
 ]
