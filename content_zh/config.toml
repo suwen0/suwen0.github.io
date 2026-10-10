@@ -21,6 +21,12 @@ target = "research"
 href = "/research"
 
 [[navigation]]
+title = "业界"
+type = "page"
+target = "industry"
+href = "/industry"
+
+[[navigation]]
 title = "教学"
 type = "page"
 target = "teaching"
