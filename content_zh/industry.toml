@@ -6,13 +6,17 @@ description = """
 
 PhD Associate（兼职），Quantitative Research · 2023 年 10 月至今
 
-在牛津大学攻读博士期间，我同时从事信用风险与 CDS 定价研究，将统计方法与金融建模相结合。
+在牛津大学攻读博士期间，我有幸与摩根大通量化团队展开长期深度合作并受其赞助（总额度约28.83万英镑）。期间，我从事信用风险与 CDS 定价研究，将统计方法与金融建模相结合，解决业界面临的实际问题。
 """
 
 [[items]]
 title = "非流动性交易对手的 CDS 利差估计"
 content = """
-交易对手信用风险估值与信用估值调整（CVA）需要可靠的信用利差，但许多交易对手缺乏活跃的 CDS 报价。基于市场分组构造的代理利差可能难以反映企业特有的风险，因此，非流动性信用利差估计是金融机构面临的重要实际问题。我的研究利用股票市场信息，特别是期权隐含波动率，在缺乏直接 CDS 报价时估计信用利差。目标是在能够用市场可观测数据校准的框架中，反映不同企业的信用质量及其随市场变化的特征。
+- 交易对手信用风险估值与信用估值调整（CVA）需要可靠的CDS利差，但许多交易对手缺乏活跃的 CDS 报价。
+
+- 估计CDS利差是Basel协会的监管要求，因此已经成为投资银行/商业银行/交易商所需解决的实际问题。
+
+- 多数现有机构采用市场平均或插值方法估计CDS利差，但这样的方法尚未考虑公司独有信息。我们的方法主要依靠发掘权益市场-信用市场的关系来估计非流动性交易对手的 CDS 利差，同时我们的模型允许我们用期权或衍生品组合来对冲我们面临的信用风险。
 """
 image = "/images/industry/spec-core.png"
 imageAlt = "估计非流动性交易对手 CDS 利差的研究图"
@@ -20,7 +24,8 @@ imagePlaceholder = "核心图片 · 待选定"
 imageCaption = ""
 referencesLabel = "参考文献"
 references = [
-  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*."
+  "Su, W. (2023). *Distance to Default Based on the CEV–KMV Model*. Journal of Risk.", 
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *A Semi-Parametric Equity-Credit Model for CDS Spread Estimation*. Available at SSRN."
 ]
 
 [[items]]
@@ -34,5 +39,7 @@ imagePlaceholder = "核心图片 · 待选定"
 imageCaption = ""
 referencesLabel = "参考文献"
 references = [
-  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *Signature-Based Structural Models and Applications in Credit Markets*."
+  "Horvath, B., Su, W., Su, W., Wang, B. and Zhang, R. (2026). *How Fast Do Signatures Learn? Statistical Theory and Applications for Path Regression*. https://arxiv.org/abs/2607.17865.",
+  "Arnsdorf, M., Horvath, B., Schismenos, S., and Su, W. (2026). *Signature-Based Structural Models and Applications in Credit Markets*. Available at SSRN.",
+  "Yang, T., Su, W. and Horvath, B. (2026). *A Rough Instantaneous Squared VIX Model for Term Structure and Option Pricing*. Preprint."
 ]
