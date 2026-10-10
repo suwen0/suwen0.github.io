@@ -43,6 +43,12 @@ target = "research"
 href = "/research"
 
 [[navigation]]
+title = "Industry"
+type = "page"
+target = "industry"
+href = "/industry"
+
+[[navigation]]
 title = "Teaching"
 type = "page"
 target = "teaching"
