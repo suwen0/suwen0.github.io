@@ -1,0 +1,40 @@
+type = "card"
+title = "业界经历与研究"
+layout = "projects"
+description = """
+**摩根大通（J.P. Morgan）· 英国伦敦**
+
+PhD Associate（兼职），Quantitative Research · 2023 年 10 月至今
+
+在牛津大学攻读博士期间，我同时从事信用风险与 CDS 定价研究，将统计方法与金融建模相结合。
+"""
+
+[[items]]
+title = "半参数股票–信用模型"
+subtitle = "与 M. Arnsdorf、B. Horvath 和 S. Schismenos 合作"
+content = """
+本项目研究利用股票市场信息估计信用违约互换（CDS）利差的半参数模型。我们将股票与信用市场之间的建模关系与灵活的统计方法相结合，并与已有信用风险模型进行实证比较。这项研究将半参数金融计量方法用于信用利差估计中的实际问题。
+"""
+image = "/images/industry/spec-core.png"
+imageAlt = "半参数股票–信用模型的核心研究图"
+imagePlaceholder = "核心图片 · 待选定"
+imageCaption = ""
+paperTitle = "A Semi-Parametric Equity-Credit Model for CDS Spread Estimation"
+status = "Journal of Credit Risk · 修改后重审"
+link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5471406"
+linkLabel = "阅读论文"
+
+[[items]]
+title = "基于路径签名的信用模型"
+subtitle = "与 M. Arnsdorf、B. Horvath 和 S. Schismenos 合作"
+content = """
+本项目研究基于路径签名的结构化信用模型。路径签名为表示底层过程的历史信息提供了系统方法，使模型能够纳入路径依赖。本研究将结构化信用模型与路径的统计表示相结合，探索其在信用市场中的应用。
+"""
+image = "/images/industry/signature-core.png"
+imageAlt = "基于路径签名的结构化信用模型的核心研究图"
+imagePlaceholder = "核心图片 · 待选定"
+imageCaption = ""
+paperTitle = "Signature-Based Structural Models and Applications in Credit Markets"
+status = "工作论文"
+link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7498599"
+linkLabel = "阅读论文"

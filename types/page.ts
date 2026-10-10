@@ -22,11 +22,17 @@ export interface CardItem {
     tags?: string[];
     link?: string;
     image?: string;
+    imageAlt?: string;
+    imageCaption?: string;
+    imagePlaceholder?: string;
+    linkLabel?: string;
+    paperTitle?: string;
+    status?: string;
 }
 
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
-    layout?: 'standard' | 'compact' | 'yearly';
+    layout?: 'standard' | 'compact' | 'yearly' | 'projects';
     subtitleLayout?: 'inline' | 'stacked';
     items: CardItem[];
 }

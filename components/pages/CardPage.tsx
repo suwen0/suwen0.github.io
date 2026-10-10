@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { CardPageConfig } from '@/types/page';
+import { CardPageConfig, CardItem } from '@/types/page';
 
 const markdownComponents = {
     p: ({ children }: React.ComponentProps<'p'>) => <p className="mb-3 last:mb-0">{children}</p>,
@@ -16,7 +17,86 @@ const markdownComponents = {
     em: ({ children }: React.ComponentProps<'em'>) => <em className="italic">{children}</em>,
 };
 
+function ProjectFigure({ item }: { item: CardItem }) {
+    const [failedSource, setFailedSource] = useState<string | null>(null);
+    const imageAvailable = Boolean(item.image && failedSource !== item.image);
+
+    return (
+        <figure className="mt-6">
+            {imageAvailable ? (
+                <a
+                    href={item.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg border border-neutral-200 bg-white p-3"
+                >
+                    <img
+                        src={item.image}
+                        alt={item.imageAlt || item.title}
+                        loading="lazy"
+                        decoding="async"
+                        onError={() => setFailedSource(item.image || '')}
+                        className="h-full w-full object-contain"
+                    />
+                </a>
+            ) : (
+                <div className="flex aspect-[4/3] items-center justify-center rounded-lg border border-dashed border-neutral-300 bg-neutral-50 px-6 text-center text-sm text-neutral-600">
+                    {item.imagePlaceholder || 'Project figure forthcoming'}
+                </div>
+            )}
+            {imageAvailable && item.imageCaption && (
+                <figcaption className="mt-3 text-sm leading-relaxed text-neutral-600">
+                    {item.imageCaption}
+                </figcaption>
+            )}
+        </figure>
+    );
+}
+
 export default function CardPage({ config, embedded = false }: { config: CardPageConfig; embedded?: boolean }) {
+    if (config.layout === 'projects') {
+        return (
+            <section>
+                <header className="mb-9 max-w-3xl">
+                    <h1 className={`${embedded ? 'text-2xl' : 'text-3xl sm:text-4xl'} mb-4 font-serif font-bold text-primary`}>
+                        {config.title}
+                    </h1>
+                    {config.description && (
+                        <div className="text-base leading-relaxed text-neutral-700">
+                            <ReactMarkdown components={markdownComponents}>{config.description}</ReactMarkdown>
+                        </div>
+                    )}
+                </header>
+
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
+                    {config.items.map((item) => (
+                        <article key={item.title} className="flex min-w-0 flex-col rounded-xl border border-neutral-200 bg-background p-5 sm:p-7">
+                            <div className="md:min-h-[7rem]">
+                                <h2 className="font-serif text-2xl font-bold leading-snug text-primary">{item.title}</h2>
+                                {item.subtitle && <p className="mt-3 text-sm leading-relaxed text-neutral-600">{item.subtitle}</p>}
+                            </div>
+                            {item.content && (
+                                <div className="mt-5 text-[0.95rem] leading-7 text-neutral-700 md:min-h-[12rem]">
+                                    <ReactMarkdown components={markdownComponents}>{item.content}</ReactMarkdown>
+                                </div>
+                            )}
+                            <ProjectFigure item={item} />
+                            <footer className="mt-auto pt-6">
+                                {item.paperTitle && <p className="text-sm italic leading-relaxed text-primary">{item.paperTitle}</p>}
+                                {item.status && <p className="mt-2 text-sm leading-relaxed text-neutral-600">{item.status}</p>}
+                                {item.link && (
+                                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex min-h-11 items-center font-medium text-accent underline-offset-4 hover:underline">
+                                        {item.linkLabel || 'Read paper'}
+                                    </a>
+                                )}
+                            </footer>
+                        </article>
+                    ))}
+                </div>
+            </section>
+        );
+    }
+
     const compact = config.layout === 'compact';
     const yearly = config.layout === 'yearly';
     const compactHasDates = compact && config.items.some((item) => item.date);

@@ -1,0 +1,41 @@
+type = "card"
+title = "Industry Experience & Research"
+layout = "projects"
+description = """
+**J.P. Morgan · London, United Kingdom**
+
+PhD Associate (part-time), Quantitative Research · October 2023–Present
+
+Alongside my doctoral research at Oxford, I work on credit risk and CDS pricing, connecting statistical methods with financial modelling.
+"""
+
+[[items]]
+title = "Semiparametric Equity–Credit Modelling"
+subtitle = "Joint work with M. Arnsdorf, B. Horvath and S. Schismenos"
+content = """
+This project develops a semiparametric model for estimating credit default swap (CDS) spreads using equity-market information. It combines equity–credit modelling with a flexible statistical specification and evaluates the resulting estimates against established credit-risk benchmarks. The research connects semiparametric financial econometrics with practical questions in credit spread estimation.
+"""
+image = "/images/industry/spec-core.png"
+imageAlt = "Core research figure for the semiparametric equity–credit model"
+imagePlaceholder = "Core figure · awaiting selection"
+# Add a one-sentence caption after choosing the actual figure.
+imageCaption = ""
+paperTitle = "A Semi-Parametric Equity-Credit Model for CDS Spread Estimation"
+status = "Journal of Credit Risk · Revise and resubmit"
+link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5471406"
+linkLabel = "Read paper"
+
+[[items]]
+title = "Signature-Based Credit Models"
+subtitle = "Joint work with M. Arnsdorf, B. Horvath and S. Schismenos"
+content = """
+This project studies signature-based structural models for credit markets. Path signatures provide a systematic way to represent the history of an underlying process and introduce path dependence into credit modelling. The research brings together structural credit models and statistical representations of paths to explore applications in credit markets.
+"""
+image = "/images/industry/signature-core.png"
+imageAlt = "Core research figure for signature-based structural credit models"
+imagePlaceholder = "Core figure · awaiting selection"
+imageCaption = ""
+paperTitle = "Signature-Based Structural Models and Applications in Credit Markets"
+status = "Working paper"
+link = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7498599"
+linkLabel = "Read paper"
