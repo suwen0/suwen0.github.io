@@ -4,8 +4,8 @@ description = "Scholarships and academic distinctions."
 layout = "compact"
 
 [[items]]
-title = "EPSRC Scholarship"
-subtitle = "Fully funded Ph.D. scholarship"
+title = "Fully funded Ph.D. sponsored by J.P. Morgan"
+subtitle = "about £288k/4y"
 tags = ["Scholarship", "Oxford"]
 
 [[items]]
