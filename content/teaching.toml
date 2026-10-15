@@ -7,7 +7,7 @@ title = "University of Oxford"
 date = "2023–Present"
 content = """
 - Statistics and Financial Data Analysis (Tutor, MSc)
-- Introduction to Statistics (Tutor, MSc)
+- Introduction to Statistics (Tutor, MSc) [[Codes]](/teaching/IntroStats_Codes.html) [[Slides]](/teaching/IntroStats_Slides.pdf)
 - Fixed Point Methods for Nonlinear PDEs (TA, Undergraduate)
 """
 
