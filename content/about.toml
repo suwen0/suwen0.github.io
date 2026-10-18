@@ -33,26 +33,6 @@ type = "markdown"
 source = "bio.md"
 title = "About"
 
-[[sections]]
-id = "education"
-type = "details"
-title = "Education"
-layout = "columns"
-
-[[sections.items]]
-primary = "University of Oxford"
-secondary = "Ph.D. in Mathematics (Quant Finance)"
-meta = "2023–2027"
-
-[[sections.items]]
-primary = "Peking University"
-secondary = "M.S. in Financial Mathematics"
-meta = "2020–2022"
-
-[[sections.items]]
-primary = "Lishui University"
-secondary = "B.S. in Mathematics and Applied Mathematics"
-meta = "2016–2020"
 
 [[sections]]
 id = "industry"
