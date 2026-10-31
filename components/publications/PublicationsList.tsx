@@ -16,7 +16,7 @@ export default function PublicationsList({ config, publications, embedded = fals
     const categories: Array<{ id: PublicationCategory; title: string }> = [
         { id: 'publication', title: 'Publications' },
         { id: 'working-paper', title: 'Working Papers' },
-        { id: 'industry', title: 'Industry-Related Research' },
+        { id: 'industry', title: 'Practitioner-Oriented Research' },
     ];
 
     const statusRank = (description?: string) => {
