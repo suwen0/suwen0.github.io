@@ -1,3 +1,4 @@
 type = "publication"
 title = "Research"
 source = "publications.bib"
+description = "Authors are listed alphabetically in all papers."
