@@ -33,10 +33,12 @@ export default function PublicationsList({ config, publications, embedded = fals
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
         >
-            <div className={embedded ? "mb-5" : "mb-8"}>
-                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} mb-3 font-serif font-bold text-primary`}>{config.title}</h1>
+            <div className={embedded || config.description ? "mb-5" : "mb-8"}>
+                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} mb-2 font-serif font-bold text-primary`}>
+                    {config.title}
+                </h1>
                 {config.description && (
-                    <p className={`${embedded ? "text-base" : "text-lg"} max-w-2xl leading-relaxed text-neutral-600 dark:text-neutral-500`}>
+                    <p className="text-xs leading-normal text-neutral-600 dark:text-neutral-500">
                         {config.description}
                     </p>
                 )}
