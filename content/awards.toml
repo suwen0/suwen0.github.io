@@ -4,6 +4,12 @@ description = "Scholarships and academic distinctions."
 layout = "compact"
 
 [[items]]
+title = "First Place of Peter Carr Memorial Award"
+subtitle = "QuantMinds International 2026"
+tags = ["Competition", "Oxford"]
+
+
+[[items]]
 title = "Ph.D. Associate Sponsorship, J.P. Morgan"
 subtitle = "about £288k/4y"
 tags = ["Scholarship", "Oxford"]
