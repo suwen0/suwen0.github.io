@@ -92,13 +92,14 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       code: tags.code,
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
+      awards: tags.award ? [cleanBibTeXString(tags.award)] : undefined,
       category,
       displayOrder: tags.display_order ? Number(tags.display_order) : undefined,
       selected,
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'display_order']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'display_order', 'award']),
     };
 
     // Clean up undefined fields
