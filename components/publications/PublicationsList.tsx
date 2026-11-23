@@ -116,7 +116,14 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                         </>
                                                     )}
                                                 </p>
-                                                
+                                                {pub.awards?.map((award, awardIndex) => (
+                                                    <p
+                                                        key={`${pub.id}-award-${awardIndex}`}
+                                                        className="font-medium text-accent"
+                                                    >
+                                                        {award}
+                                                    </p>
+                                                ))}
                                             </div>
                                         </motion.li>
                                     );
