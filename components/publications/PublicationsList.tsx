@@ -121,7 +121,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                         key={`${pub.id}-award-${awardIndex}`}
                                                         className="font-medium text-accent"
                                                     >
-                                                        {award}
+                                                        • {award}
                                                     </p>
                                                 ))}
                                             </div>
